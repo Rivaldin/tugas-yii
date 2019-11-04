@@ -1,0 +1,2013 @@
+2019-11-04 06:33:53 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#18 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#21 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#24 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('')
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\di\Container.php(400): ReflectionClass->newInstanceArgs(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\di\Container.php(159): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\BaseYii.php(351): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#16 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#19 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', '[<span class="s...')
+#22 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-11-04 06:33:52 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572845632.946
+    'REQUEST_TIME' => 1572845632
+]
+2019-11-04 06:54:19 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 06:54:19 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'sVle4b3pzVEeILNIyTTMUMTTJ-GEvkV2eKuN9RfvIDPfahyY17CAEnlBwX6EXqga9JdCj-7RJkcgnLWCTrwQQg=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\Approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49857'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572846859.46
+    'REQUEST_TIME' => 1572846859
+]
+2019-11-04 06:56:35 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 06:56:35 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'YOUU4dEgtEVgvIwFLzjPiszdMPGR4emsqLUdBDsRVFEO1laYu3n5Bgfd_jNiUqvA_JlVn_uOip3wgiVzYkJkIA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\Approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50031'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572846995.168
+    'REQUEST_TIME' => 1572846995
+]
+2019-11-04 06:57:22 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 06:57:22 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'yPxjFAgfdyQph_r8q5TNhNYuyMWxq0wAaiWn-zAbh_umzyFtYkY6Z07miMrm_qnO5mqtq9vELzEyEp-MaUi3ig=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\Approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50055'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847042.174
+    'REQUEST_TIME' => 1572847042
+]
+2019-11-04 07:01:26 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:01:26 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'Lys2sBeLgDnfSPz16EGNW4QyPnf1p02HT2-ym281gItBGHTJfdLNergpjsOlK-kRtHZbGZ_ILrYXWIrsNmaw-g=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\Approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50090'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847286.16
+    'REQUEST_TIME' => 1572847286
+]
+2019-11-04 07:03:37 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:03:37 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'v2rN2AVeBykDH6DYgFzTIRySzyHbQSBA3nhSzPOro47RWY-hbwdKamR-0u7NNrdrLNaqT7EuQ3GGT2q7qviT_w=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\Approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50109'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847417.239
+    'REQUEST_TIME' => 1572847417
+]
+2019-11-04 07:04:50 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\JabatanUsers' not found in C:\xampp\htdocs\basic\models\Approval_surat_keluar.php:44
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Approval_surat_keluar->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:04:50 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'RSoDeJDy9_cgi25dycbPlDp5SzpYUI13kWn9-4sXp-ArGUEB-qu6tEfqHGuErKveCj0uVDI_7kbJXsWM0kSXkQ=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\approval_surat_keluar'
+        'searchModelClass' => 'app\\models\\approval_surat_keluarSearch'
+        'controllerClass' => 'app\\controllers\\Approval_surat_keluarController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '570'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50135'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847490.497
+    'REQUEST_TIME' => 1572847490
+]
+2019-11-04 07:08:10 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\Disposisi_rules_edge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\Disposisi_rules_edge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:08:10 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'RQiQIkoT8FyFyjNw1nwY-OIyVj1uMRzaS1zujJXKDMgrO9JbIEq9H-KrQUabFnyy0nYzUwRef-sTa9b7zJk8uQ=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Disposisi_rules_edge'
+        'searchModelClass' => 'app\\models\\Disposisi_rules_edgeSearch'
+        'controllerClass' => 'app\\controllers\\Disposisi_rules_edgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50173'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847690.304
+    'REQUEST_TIME' => 1572847690
+]
+2019-11-04 07:10:14 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: DisposisiRulesEdge in C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\ActiveRecord.php:438
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\db\ActiveRecord.php(459): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(159): yii\db\ActiveRecord::primaryKey()
+#2 [internal function]: yii\gii\generators\crud\Generator->validateModelClass('modelClass', NULL, Object(yii\validators\InlineValidator))
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'modelClass', NULL, Object(yii\validators\InlineValidator))
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(yii\gii\generators\crud\Generator), 'modelClass')
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(yii\gii\generators\crud\Generator), Array)
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(59): yii\base\Model->validate()
+#7 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2019-11-04 07:10:14 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'X49PZIrzoG_sj8TyNV140qCkqmC-yncfoRs8L888V_wxvA0d4KrtLIvutsR4NxyYkODPDtSlFC75LARYlm9njQ=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572847814.657
+    'REQUEST_TIME' => 1572847814
+]
+2019-11-04 07:21:59 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:21:59 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'ABsjofvp85TmKYuB2mkWVF04VGNvYEa241nCEZXFvFVuKGHYkbC-14FI-beXA3IebXwxDQUPJYe7bvpmzJaMJA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848519.266
+    'REQUEST_TIME' => 1572848519
+]
+2019-11-04 07:22:48 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:22:48 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'CrUA66YO32gVGYnyeW1GNQYCmgkBuTN7soKO_F_aNo9khkKSzFeSK3J4-8Q0ByJ_Nkb_Z2vWUErqtbaLBokG_g=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50308'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848568.145
+    'REQUEST_TIME' => 1572848568
+]
+2019-11-04 07:24:43 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:24:43 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'VyG5PkR85eMPvRQgfe9PSK1chYRSIvxn_yI3Xa2-5uI5EvtHLiWooGjcZhYwhSsCnRjg6jhNn1anFQ8q9O3Wkw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50328'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848683.313
+    'REQUEST_TIME' => 1572848683
+]
+2019-11-04 07:25:22 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:25:22 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'rkYiX_KpdRcaWmaKuy9-pu38uNF-Vz64MNEGTRqRYYjAdWAmmPA4VH07FLz2RRrs3bjdvxQ4XYlo5j46Q8JR-Q=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50337'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848722.108
+    'REQUEST_TIME' => 1572848722
+]
+2019-11-04 07:26:28 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:26:28 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'MM_38V7Ot-lHx0uipjk-H-9Xd8B6dgNq2HkgExGa8A5e_LWINJf6qiCmOZTrU1pV3xMSrhAZYFuAThhkSMnAfw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50342'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848788.108
+    'REQUEST_TIME' => 1572848788
+]
+2019-11-04 07:28:38 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:28:38 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'lFD8lg6IgSf7yYqwCxwBauFDxP3S_zJzh_D94eO0Rc36Y77vZNHMZJyo-IZGdmUg0Qehk7iQUULfx8WWuud1vA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50361'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848918.324
+    'REQUEST_TIME' => 1572848918
+]
+2019-11-04 07:29:11 [::1][-][ev9488fbd5bple8k8gl3e5dup2][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:29:10 [::1][-][ev9488fbd5bple8k8gl3e5dup2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'lFD8lg6IgSf7yYqwCxwBauFDxP3S_zJzh_D94eO0Rc36Y77vZNHMZJyo-IZGdmUg0Qehk7iQUULfx8WWuud1vA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ev9488fbd5bple8k8gl3e5dup2'
+    '_csrf' => 'b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=ev9488fbd5bple8k8gl3e5dup2; _csrf=b3c0460c59ba0ee1dd2ad352dc2b218ee33e92e9249f7b6dd5175eec865ca8c6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22n3ByjYMCgar6MjdJ0Denjoc1X78wYS0q%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '50365'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572848950.936
+    'REQUEST_TIME' => 1572848950
+]
+2019-11-04 07:41:02 [::1][-][-][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\basic\models\JabatanUsers.php:51
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\JabatanUsers->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:41:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 't5CJ5lyTe05w2Or977Gyfw_wcwO18u-K4VV2u5XT7arRwryyEuA0GTiw35Cj3vQHSbcdcOK32_6vYjvi8b6H3Q=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\JabatanUsers'
+        'searchModelClass' => 'app\\models\\JabatanUsersSearch'
+        'controllerClass' => 'app\\controllers\\JabatanUsersController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '543'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572849662.551
+    'REQUEST_TIME' => 1572849662
+]
+2019-11-04 07:42:21 [::1][-][-][error][Error] Error: Class 'app\models\Users' not found in C:\xampp\htdocs\basic\models\JabatanUsers.php:51
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\JabatanUsers->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:42:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 't5CJ5lyTe05w2Or977Gyfw_wcwO18u-K4VV2u5XT7arRwryyEuA0GTiw35Cj3vQHSbcdcOK32_6vYjvi8b6H3Q=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\JabatanUsers'
+        'searchModelClass' => 'app\\models\\JabatanUsersSearch'
+        'controllerClass' => 'app\\controllers\\JabatanUsersController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '543'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572849741.54
+    'REQUEST_TIME' => 1572849741
+]
+2019-11-04 07:46:56 [::1][-][-][error][Error] Error: Class 'app\models\DisposisiRulesNode' not found in C:\xampp\htdocs\basic\models\DisposisiRulesEdge.php:35
+Stack trace:
+#0 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(464): app\models\DisposisiRulesEdge->rules()
+#1 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#2 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(189): yii\base\Model->getValidators()
+#3 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Model.php(795): yii\base\Model->scenarios()
+#4 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\default\views\_form.php(11): yii\base\Model->safeAttributes()
+#5 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\Generator.php(317): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(yii\gii\generators\crud\Generator))
+#8 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\generators\crud\Generator.php(188): yii\gii\Generator->render('views/_form.php')
+#9 C:\xampp\htdocs\basic\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(61): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 C:\xampp\htdocs\basic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\basic\web\index.php(12): yii\base\Application->run()
+#17 {main}
+2019-11-04 07:46:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'V8XNH0DFOxydZ6PisuKnSfOzmgxcZk_Vy6-mdVlm3gQxl_hLDrZ0S9UPlo_-jeExtfT0fwsje6GFmOssPQu0cw=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\DisposisiRulesEdge'
+        'searchModelClass' => 'app\\models\\DisposisiRulesEdgeSearch'
+        'controllerClass' => 'app\\controllers\\DisposisiRulesEdgeController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '561'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=7a1f21e4a518774c0c2fd67c9f9e6ca582f3ff7986bc4d21d08b7ca9e69aa09fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fR5TNsOWHh5mLoFxFGnsWE4tN7MYdmjw%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\composer;C:\\Users\\pc lenovo\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\pc lenovo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.3.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '49735'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/basic/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1572850016.633
+    'REQUEST_TIME' => 1572850016
+]
